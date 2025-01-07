@@ -4,22 +4,33 @@
 int main()
 {
     // Set up variables
-    int num1;
-    std::string noun1;
-    std::string adjective1;
+    double num1;
+    std::string name;
+    std::string n1, n2, n3, n4, n5;
+    std::string adj1, adj2, adj3;
+    std::string v1, v2, v3;
+    
 
     // Get user input
     std::cout << "Enter a number: ";
     std::cin >> num1;
 
+    std::cout << "Enter a name: ";
+    std::cin >> name;
+
     std::cout << "Enter a noun: ";
-    std::cin >> noun1;
+    std::cin >> n1;
+
 
     std::cout << "Enter an adjective: ";
-    std::cin >> adjective1;
+    std::cin >> adj1;
+
+    std::cout << "Enter a verb: ";
+    std::cin >> v1;
 
     // Display story
-    std::cout << "There was once a " << noun1 << " named Larry. They were very " << adjective1 << ", and they were " << num1 << " years old.\n";
+    std::cout << "I wish " << name << " was any good at writing madlibs. All they ever do is " << v1 << " instead.\n"
+              << "They have such " << adj1 << " ideas, but they always end up looking like " << n1 << " in the end.\n";
     
     return 0;
 }
